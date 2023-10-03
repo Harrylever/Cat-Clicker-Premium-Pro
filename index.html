@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="main_container">
+            <!-- Cat List View -->
+            <div class="list_container" id="list_container"></div>
+
+            <!-- Cat View -->
+            <div class="display_cat_container" id="display_cat_container">
+                <div>
+                    <p id="cat-name"></p>
+                    <img id="cat-image" src="" alt="">
+                    <p id="counter"></p>
+                </div>
+
+                <div style="padding-top: 2rem;">
+                    <div>
+                        <button id="cat-form-display-btn">Admin</button>
+                    </div>
+                    <div class="cat_form" id="cat-form-container">
+                        <form id="cat-form">
+                            <p id="cat-id" style="display: none;"></p>
+                            <div>
+                                <label for="cat-name-label">
+                                    <p>name</p>
+                                    <input type="text" id="cat-name-input">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="cat-image-label">
+                                    <p>image url</p>
+                                    <input type="text" id="cat-image-input">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="cat-clicks-label">
+                                    <p>clicks</p>
+                                    <input type="text" id="cat-clicks-input">
+                                </label>
+                            </div>
+                            <div>
+                                <button id="cancel" type="button">Cancel</button>
+                                <button id="submit" type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
